@@ -25,7 +25,7 @@ var AppModule = (function () {
             imports: [
                 platform_browser_1.BrowserModule,
                 contact_module_1.ContactModule,
-                core_module_1.CoreModule,
+                core_module_1.CoreModule.forRoot({ userName: 'Mr. Success' }),
                 app_routing_module_1.AppRoutingModule,
             ],
             declarations: [app_component_1.AppComponent],

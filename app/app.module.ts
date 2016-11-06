@@ -19,7 +19,7 @@ import { AppRoutingModule } from './app.routing.module';
     imports: [
         BrowserModule, 
         ContactModule,
-        CoreModule,
+        CoreModule.forRoot({userName: 'Mr. Success'}),
         AppRoutingModule,
         ],
     declarations: [AppComponent],

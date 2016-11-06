@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 
 @Component({
     selector: 'my-app',
-    template:`<app-title [subtitle]="echo"></app-title>
+    template:`<app-title [subtitle]="subtitle"></app-title>
               <nav>
                  <a routerLink="contact" routerLinkActive="active">Contact</a>
                  <a routerLink="crisis" routerLinkActive="active">Crisis Center</a>
@@ -15,6 +15,6 @@ import { Component } from '@angular/core';
 })
 
 export class AppComponent {
-    subtitle = '(v1)';
-    echo = "whoo!!"
+    subtitle = 'Final';
+
 }

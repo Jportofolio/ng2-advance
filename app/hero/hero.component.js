@@ -10,7 +10,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var hero_service_1 = require('./hero.service');
-var user_service_1 = require('../user.service');
+var user_service_1 = require('../core/user.service');
 var HeroComponent = (function () {
     function HeroComponent(UserService) {
         this.UserName = '';
@@ -21,10 +21,9 @@ var HeroComponent = (function () {
             template: "\n      <h2 highlight>Heroes of {{UserName}}</h2>\n      <router-outlet></router-outlet>",
             providers: [hero_service_1.HeroService]
         }), 
-        __metadata('design:paramtypes', [(typeof (_a = typeof user_service_1.UserService !== 'undefined' && user_service_1.UserService) === 'function' && _a) || Object])
+        __metadata('design:paramtypes', [user_service_1.UserService])
     ], HeroComponent);
     return HeroComponent;
-    var _a;
 }());
 exports.HeroComponent = HeroComponent;
 //# sourceMappingURL=hero.component.js.map

@@ -4,8 +4,6 @@ import { SharedModule } from '../shared/shared.module'; // module that import Aw
 
 
 import { ContactRoutingModule } from './contact-routing.module';
-import { AwesomePipe } from './awesome.pipe';
-
 import { ContactComponent }  from './contact.component';
 import { ContactService } from './contact.service';
 
