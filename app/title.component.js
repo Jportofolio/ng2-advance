@@ -27,9 +27,10 @@ var TitleComponent = (function () {
             selector: 'app-title',
             templateUrl: 'title.component.html',
         }), 
-        __metadata('design:paramtypes', [user_service_1.UserService])
+        __metadata('design:paramtypes', [(typeof (_a = typeof user_service_1.UserService !== 'undefined' && user_service_1.UserService) === 'function' && _a) || Object])
     ], TitleComponent);
     return TitleComponent;
+    var _a;
 }());
 exports.TitleComponent = TitleComponent;
 //# sourceMappingURL=title.component.js.map

@@ -9,22 +9,17 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var hero_service_1 = require('./hero.service');
-var user_service_1 = require('../user.service');
-var HeroComponent = (function () {
-    function HeroComponent(UserService) {
-        this.UserName = '';
-        this.UserName = UserService.userName;
+var AwesomePipe = (function () {
+    function AwesomePipe() {
     }
-    HeroComponent = __decorate([
-        core_1.Component({
-            template: "\n      <h2 highlight>Heroes of {{UserName}}</h2>\n      <router-outlet></router-outlet>",
-            providers: [hero_service_1.HeroService]
-        }), 
-        __metadata('design:paramtypes', [(typeof (_a = typeof user_service_1.UserService !== 'undefined' && user_service_1.UserService) === 'function' && _a) || Object])
-    ], HeroComponent);
-    return HeroComponent;
-    var _a;
+    AwesomePipe.prototype.transform = function (phrase) {
+        return phrase ? 'Awesome ' + phrase : '';
+    };
+    AwesomePipe = __decorate([
+        core_1.Pipe({ name: 'awesome' }), 
+        __metadata('design:paramtypes', [])
+    ], AwesomePipe);
+    return AwesomePipe;
 }());
-exports.HeroComponent = HeroComponent;
-//# sourceMappingURL=hero.component.js.map
+exports.AwesomePipe = AwesomePipe;
+//# sourceMappingURL=awesome.pipe.js.map

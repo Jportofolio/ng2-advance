@@ -4,12 +4,12 @@ import { BrowserModule } from '@angular/platform-browser';
 
 /* App Root */
 import { AppComponent } from './app.component';
-import { SharedModule } from './shared/shared.module';
-import { UserService } from './user.service';
-import {TitleComponent } from './title.component';
+
 
 /** Feature Modules */
 import { ContactModule } from './contact/contact.module';
+import { CoreModule } from './core/core.module';
+
 
 /** Routing Module */
 import { AppRoutingModule } from './app.routing.module';
@@ -19,14 +19,10 @@ import { AppRoutingModule } from './app.routing.module';
     imports: [
         BrowserModule, 
         ContactModule,
+        CoreModule,
         AppRoutingModule,
-        SharedModule
         ],
-    declarations: [
-        AppComponent,
-        TitleComponent,
-    ],
-    providers: [ UserService],
+    declarations: [AppComponent],
     bootstrap:  [AppComponent]
 })
 

@@ -55,9 +55,10 @@ var ContactComponent = (function () {
             templateUrl: 'contact.component.html',
             styleUrls: ['contact.component.css']
         }), 
-        __metadata('design:paramtypes', [contact_service_1.ContactService, user_service_1.UserService])
+        __metadata('design:paramtypes', [contact_service_1.ContactService, (typeof (_a = typeof user_service_1.UserService !== 'undefined' && user_service_1.UserService) === 'function' && _a) || Object])
     ], ContactComponent);
     return ContactComponent;
+    var _a;
 }());
 exports.ContactComponent = ContactComponent;
 //# sourceMappingURL=contact.component.js.map

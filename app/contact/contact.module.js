@@ -9,21 +9,17 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-// import { CommonModule } from '@angular/common';
-/** Imports the ChildRouter module */
+var shared_module_1 = require('../shared/shared.module'); // module that import Awsome pipe and highlight
 var contact_routing_module_1 = require('./contact-routing.module');
 var contact_component_1 = require('./contact.component');
 var contact_service_1 = require('./contact.service');
-var shared_module_1 = require('../shared/shared.module'); // module that import Awsome pipe and highlight
 var ContactModule = (function () {
     function ContactModule() {
     }
     ContactModule = __decorate([
-        // module that import Awsome pipe and highlight
         core_1.NgModule({
             imports: [contact_routing_module_1.ContactRoutingModule, shared_module_1.SharedModule],
             declarations: [contact_component_1.ContactComponent],
-            // exports:      [ ContactComponent],
             providers: [contact_service_1.ContactService]
         }), 
         __metadata('design:paramtypes', [])
