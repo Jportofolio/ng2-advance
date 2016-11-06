@@ -9,8 +9,10 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var common_1 = require('@angular/common');
-var forms_1 = require('@angular/forms');
+// import { CommonModule } from '@angular/common';
+// import { FormsModule } from '@angular/forms';
+// Shared Module replace CommonModule and others common feature
+var shared_module_1 = require('../shared/shared.module');
 var hero_component_1 = require('./hero.component');
 var hero_detail_component_1 = require('./hero-detail.component');
 var hero_list_component_1 = require('./hero-list.component');
@@ -21,7 +23,7 @@ var HeroModule = (function () {
     }
     HeroModule = __decorate([
         core_1.NgModule({
-            imports: [common_1.CommonModule, forms_1.FormsModule, hero_routing_module_1.HeroRoutingModule],
+            imports: [shared_module_1.SharedModule, hero_routing_module_1.HeroRoutingModule],
             declarations: [
                 hero_component_1.HeroComponent, hero_detail_component_1.HeroDetailComponent, hero_list_component_1.HeroListComponent,
                 highlight_directive_1.highlightDirective
