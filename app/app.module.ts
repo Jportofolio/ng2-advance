@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 /* App Root */
 import { AppComponent } from './app.component';
-import { HighlighDirective } from './lighlight.directive';
+import { SharedModule } from './shared/shared.module';
 import { UserService } from './user.service';
 import {TitleComponent } from './title.component';
 
@@ -19,11 +19,11 @@ import { AppRoutingModule } from './app.routing.module';
     imports: [
         BrowserModule, 
         ContactModule,
-        AppRoutingModule
+        AppRoutingModule,
+        SharedModule
         ],
     declarations: [
         AppComponent,
-        HighlighDirective,
         TitleComponent,
     ],
     providers: [ UserService],

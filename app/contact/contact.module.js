@@ -13,17 +13,17 @@ var common_1 = require('@angular/common');
 /** Imports the ChildRouter module */
 var contact_routing_module_1 = require('./contact-routing.module');
 var forms_1 = require('@angular/forms');
-var awesome_pipe_1 = require('./awesome.pipe');
 var contact_component_1 = require('./contact.component');
 var contact_service_1 = require('./contact.service');
-var contact_highlight_directive_1 = require('./contact.highlight.directive');
+var shared_module_1 = require('../shared/shared.module'); // module that import Awsome pipe and highlight
 var ContactModule = (function () {
     function ContactModule() {
     }
     ContactModule = __decorate([
+        // module that import Awsome pipe and highlight
         core_1.NgModule({
-            imports: [common_1.CommonModule, forms_1.FormsModule, contact_routing_module_1.ContactRoutingModule],
-            declarations: [contact_component_1.ContactComponent, contact_highlight_directive_1.ContactHighlightDirective, awesome_pipe_1.AwesomePipe],
+            imports: [common_1.CommonModule, forms_1.FormsModule, contact_routing_module_1.ContactRoutingModule, shared_module_1.SharedModule],
+            declarations: [contact_component_1.ContactComponent],
             // exports:      [ ContactComponent],
             providers: [contact_service_1.ContactService]
         }), 

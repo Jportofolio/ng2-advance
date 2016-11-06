@@ -11,11 +11,11 @@ import { AwesomePipe } from './awesome.pipe';
 import { ContactComponent }  from './contact.component';
 import { ContactService } from './contact.service';
 
-import { ContactHighlightDirective } from './contact.highlight.directive';
+import { SharedModule } from '../shared/shared.module'; // module that import Awsome pipe and highlight
 
 @NgModule({
-    imports :     [ CommonModule, FormsModule, ContactRoutingModule ],
-    declarations: [ ContactComponent, ContactHighlightDirective, AwesomePipe],
+    imports :     [ CommonModule, FormsModule, ContactRoutingModule, SharedModule ],
+    declarations: [ ContactComponent],
     // exports:      [ ContactComponent],
     providers:    [ ContactService]
 })

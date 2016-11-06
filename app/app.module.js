@@ -12,7 +12,7 @@ var core_1 = require('@angular/core'); // this is the root Module
 var platform_browser_1 = require('@angular/platform-browser');
 /* App Root */
 var app_component_1 = require('./app.component');
-var lighlight_directive_1 = require('./lighlight.directive');
+var shared_module_1 = require('./shared/shared.module');
 var user_service_1 = require('./user.service');
 var title_component_1 = require('./title.component');
 /** Feature Modules */
@@ -27,11 +27,11 @@ var AppModule = (function () {
             imports: [
                 platform_browser_1.BrowserModule,
                 contact_module_1.ContactModule,
-                app_routing_module_1.AppRoutingModule
+                app_routing_module_1.AppRoutingModule,
+                shared_module_1.SharedModule
             ],
             declarations: [
                 app_component_1.AppComponent,
-                lighlight_directive_1.HighlighDirective,
                 title_component_1.TitleComponent,
             ],
             providers: [user_service_1.UserService],
